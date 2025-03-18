@@ -35,3 +35,15 @@ form * {
     margin: auto;
     text-align: center;
 }
+
+ul{
+    display:none;
+}
+
+#full {
+    display: none;
+}
+
+#readLess{
+    display:none;
+}

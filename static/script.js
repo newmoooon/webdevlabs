@@ -72,3 +72,36 @@ function greetingFunc() {
 }
 
 greetingFunc();
+
+function addYear() {
+    let year = new Date().getFullYear();
+    document.getElementById("copyYear").innerText = `${year}`;
+}
+
+
+function showList() {
+    let list = document.querySelector("ul");
+    let button = document.getElementById("displayList");
+    list.style.display = "block"; 
+    button.style.display = "none"; 
+}
+
+
+$("#readMore, #readLess").click(function() {
+    $("#short, #full, #readMore, #readLess").toggle();
+  });
+
+
+function checkForm() {
+    let name = document.getElementById("fname");
+    let email = document.getElementById("email");
+    let comment = document.getElementById("comment");
+    let errorMessage = document.getElementById("errorMessage");
+
+    if (!name.checkValidity() || !email.checkValidity() || !comment.checkValidity()) {
+        errorMessage.innerHTML = "Please fill out the form correctly so I can get back to you :)";
+    }
+    else{
+        errorMessage.innerHTML = "";
+    }
+}

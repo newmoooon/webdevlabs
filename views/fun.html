@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="../static/script.js" defer></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Cindy Wang</h1>
         <nav>
@@ -27,6 +27,7 @@
     </header>
     <div class="main">
         <h2>Things I love to do for fun</h2>
+        <button id="displayList" onclick="showList()">Click to see...</button>
         <ul>
             <li>Playing volleyball</li>
             <li>Cooking food</li>
@@ -36,8 +37,10 @@
             <li>Napping</li>
         </ul>
     </div>
-    <footer>© 2025 desgined and coded by Cindy Wang</footer>
-
+    <footer>
+        <p id="copyYear" style="display: inline;"></p>
+        <p style="display:inline">Designed and coded by Cindy Wang</p>
+    </footer>
 
 </body>
 </html>

@@ -15,8 +15,13 @@
     <link rel="stylesheet" href="./static/style.css">
 
     <script src="./static/script.js" defer></script>
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Cindy Wang</h1>
         <nav>
@@ -30,7 +35,15 @@
     <div class="main">
         <h2 id="greeting">Hi, my name is Cindy</h2>
         <img src="static/myPicture.jpg" alt="My Picture" width="400" height="400">
-        <p id="intro">Hi I’m Cindy Wang and welcome to my personal website! I am a 
+        
+        <p id ="short">Hi I’m Cindy Wang and welcome to my personal website! I am a 
+            current undergraduate freshman at Carnegie Mellon University studying 
+            Information Systems, hoping to double major in Artificial Intelligence 
+            and minor in Human Computer Interactions. I was born in Beijing, China, 
+            but grew up in Cupertino, California. Being in the heart of Silicon Valley, 
+            I am passionate and curious about the power of technology to shape human lives 
+            and the future. </p>
+        <p id="full">Hi I’m Cindy Wang and welcome to my personal website! I am a 
             current undergraduate freshman at Carnegie Mellon University studying 
             Information Systems, hoping to double major in Artificial Intelligence 
             and minor in Human Computer Interactions. I was born in Beijing, China, 
@@ -43,10 +56,15 @@
             intersection of cybersecurity and artificial intelligence, such as using large language 
             models to protect digital privacy and defend against cyber threats. Feel free to reach out 
             because I would love to connect and explore new opportunities with like-minded individuals. 
-
         </p>
+        <button id="readMore">Read More</button>
+        <button id="readLess">Read Less</button>
+
     </div>
-    <footer>© 2025 designed and coded by Cindy Wang</footer>
+    <footer>
+        <p id="copyYear" style="display: inline;"></p>
+        <p style="display:inline">Designed and coded by Cindy Wang</p>
+    </footer>
 
 
 </body>
