@@ -25,17 +25,36 @@
             <a href="contact.html">contact</a>
         </nav>
     </header>
-    <div class="main">
-        <h2>Things I love to do for fun</h2>
-        <button id="displayList" onclick="showList()">Click to see...</button>
-        <ul>
-            <li>Playing volleyball</li>
-            <li>Cooking food</li>
-            <li>Traveling</li>
-            <li>Watching Chinese dramas</li>
-            <li>Playing cards</li>
-            <li>Napping</li>
-        </ul>
+    <div class="mainLayout">
+        <div class="item1">
+            <h2>Things I love to do for fun</h2>
+            <!-- <button id="displayList" onclick="showList()">Click to see...</button> -->
+            <ul>
+                <li>Playing volleyball</li>
+                <li>Cooking food</li>
+                <li>Traveling</li>
+                <li>Watching Chinese dramas</li>
+                <li>Playing cards</li>
+                <li>Napping</li>
+            </ul>
+        </div>
+        <div class="item2">
+            <img src="../static/fun.jpg" alt="Fun Image" class="funIMG">
+        </div>
+
+        <div class="item3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qM43gnigKgQ?si=YADgMMYxyt_GvAN-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="item4">
+            <div class="container">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick="getAdvice()">Get Advice</button>
+            </div>
+            
+        </div>
+        
     </div>
     <footer>
         <p id="copyYear" style="display: inline;"></p>

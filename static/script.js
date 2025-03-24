@@ -37,18 +37,18 @@ let L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 //     }
 // }
 
-// forEach loop
-function findTheBanana(arr) {
-    arr.forEach(item => {
-        if (item === "Banana") {
-            alert("Banana found in the array");
-        }
-    });
-}
+// // forEach loop
+// function findTheBanana(arr) {
+//     arr.forEach(item => {
+//         if (item === "Banana") {
+//             alert("Banana found in the array");
+//         }
+//     });
+// }
 
 
-findTheBanana(L1);
-findTheBanana(L2);
+// findTheBanana(L1);
+// findTheBanana(L2);
 
 function greetingFunc() {
     let d = new Date();
@@ -79,12 +79,12 @@ function addYear() {
 }
 
 
-function showList() {
-    let list = document.querySelector("ul");
-    let button = document.getElementById("displayList");
-    list.style.display = "block"; 
-    button.style.display = "none"; 
-}
+// function showList() {
+//     let list = document.querySelector("ul");
+//     let button = document.getElementById("displayList");
+//     list.style.display = "block"; 
+//     button.style.display = "none"; 
+// }
 
 
 $("#readMore, #readLess").click(function() {
@@ -105,3 +105,16 @@ function checkForm() {
         errorMessage.innerHTML = "";
     }
 }
+
+function getAdvice() {
+    fetch("https://api.adviceslip.com/advice")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("adviceText").innerText = data.slip.advice;
+        })
+        .catch(error => {
+            console.error("Error fetching advice:", error);
+            document.getElementById("adviceText").innerText = "Oops! Something went wrong. Try again.";
+        });
+}
+

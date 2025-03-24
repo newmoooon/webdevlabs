@@ -36,9 +36,9 @@ form * {
     text-align: center;
 }
 
-ul{
+/* ul{
     display:none;
-}
+} */
 
 #full {
     display: none;
@@ -46,4 +46,35 @@ ul{
 
 #readLess{
     display:none;
+}
+
+.funIMG{
+    border-radius: 100%;
+    width:500px;
+    height:auto;
+    box-shadow: 10px 10px 20px rgba(100, 0, 0, 0.95);
+}
+
+.container{
+    border-radius: 100%;
+    display: inline-block;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.mainLayout{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+.item1,.item2,.item3,.item4{
+    width:40vw;
+    margin:auto;
+    justify-content: center;
+
+}
+
+button{
+    background-color:#e062bf;
 }
